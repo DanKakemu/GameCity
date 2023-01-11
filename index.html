@@ -1,57 +1,68 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>GameCity</title>
-    </head>
-        <body>
-            <img src="data:image/png;base64,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">
-            <div class="main">
-                <div class="Sub-main">
-                    <h1>Welcome to GameCity Entertainment Kenya</h1>
-                </div>
-                <div class="mini-main">
-                    <h2>Be a member and get free access to various mersch's</h2>
-                </div>
-            </div>  
-                <!--
-                <div class="header_content"></div>
-                <button class="btn header__menu-trigger nav trigger "></button>
-                <i class="fa fa-bars"></i>
-                -->
-            <div>
-                <h4><p>Sign up below</p></h4>
-            </div>
-            <div class="input-credentials">
-                <input type="text" placeholder="Enter Firstname">
-                <input type="text" placeholder="Enter Lastname">
-                <input type="password" placeholder="Enter password">
-                <input type="password" placeholder="Confirm Password">
-                <input type="date" placeholder="Enter Date of Birth">
-            </div>
-            
-            <button>Sign Up</button> 
-            <div class="sub-main">       
-            <h4><a target="_blank" href="https://gamecity.simplybook.me/v2/"> <h4>Book your sessions today</h4></a>
-            </div>
-            <div class="Corte">
-                <p>We are located in:</p>
-                    <div>
-                        <ul>
-                            <li>Embakasi</li>
-                            <li>Kitsuru</li>
-                            <li>Karen</li>
-                        </ul>
+    <html>
+        <head>
+            <link rel="stylesheet" href="style.css">
+            <title>GameCity</title>
+        </head>
+            <body>
+                <img src="data:image/png;base64,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">
+                <div class="main">
+                    <div class="Sub-main">
+                        <h1>Welcome to GameCity Entertainment Kenya</h1>
                     </div>
-            </div>
-                <p>My name you an admin? Log in <a target="_blank" href="https://simplybook.me/en/">here</a></p>
-        </body>
-</html>
-
-
-
-
-
-
-
+                    <div class="mini-main">
+                        <h2>Be a member and get free access to various mersch's</h2>
+                    </div>
+                </div>  
+                    <!--
+                    <div class="header_content"></div>
+                    <button class="btn header__menu-trigger nav trigger "></button>
+                    <i class="fa fa-bars"></i>
+                    -->
+                <div>
+                    <h4><p>Sign up below</p></h4>
+                </div>
+                <div class="input-credentials">
+                    <input type="text" placeholder="Enter Firstname">
+                    <input type="text" placeholder="Enter Lastname">
+                    <input type="password" placeholder="Enter password">
+                    <input type="password" placeholder="Confirm Password">
+                    <input type="date" placeholder="Enter Date of Birth">
+                </div>
+                    <!--    
+                    <input type="file" placeholder="Choose file">
+                    
+                    <div class="btnContainer">
+                        <svg width="100" height="220" viewBox="0 0 100 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path id="rope" d="M50 0V130" stroke="#333842" stroke-width="6" />
+                          <path id="rope-original" d="M50 0V130" stroke="black" stroke-width="1" class="hidden" />
+                          <path id="rope-extended" d="M50 0V170" stroke="black" stroke-width="1" class="hidden" />
+                          <path id="rope-compressed" d="M50.6794 99.5395C50.6794 99.5395 51.0304 93.3539 50.6794 89.416C49.698 78.405 40.6105 73.7631 41.2462 62.7267C42.1339 47.3139 63.6882 46.1634 64.4843 30.7456C65.1561 17.7347 50.6794 0.375 50.6794 0.375" stroke="black" stroke-width="1" class="hidden" />
+                          <path id="rope-end" d="M39.282 5.16623C39.9597 1.92197 42.8198 -0.402344 46.134 -0.402344H54.756C58.1211 -0.402344 61.01 1.99207 61.6344 5.29871L68.4328 41.2987C69.2468 45.6092 65.941 49.5977 61.5544 49.5977H38.6135C34.1717 49.5977 30.8531 45.5141 31.7614 41.1662L39.282 5.16623Z" transform="matrix(1,0,0,1,0,120)" fill="#3B2898" />
+                        </svg>
+                        <div class="btn no-highlight" id="btn">
+                          <div class="knob no-highlight">
+                            <div class="light no-highlight"></div>
+                            <div class="top no-highlight"></div>
+                          </div>
+                        </div>
+                      </div>    
+                    -->
+                
+                <button>Sign Up</button> 
+                <div class=""         
+                <h4><a target="_blank" href="https://gamecity.simplybook.me/v2/"> <h4>Book your sessions today</h4></a>
+                </div>
+                <div class="Corte">
+                    <p>We are located in:</p>
+                        <div>
+                            <ul>
+                                <li>Embakasi</li>
+                                <li>Kitsuru</li>
+                                <li>Karen</li>
+                            </ul>
+                        </div>
+                </div>
+                    <p>My name you an admin? Log in <a target="_blank" href="https://simplybook.me/en/">here</a></p>
+            </body>
+    </html>
